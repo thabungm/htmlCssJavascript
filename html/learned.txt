@@ -9,3 +9,13 @@
     -- git pull origin main
 - install live server
 - emmet generates html snippet(inbuilt with vscode)    
+
+
+Git quick commands
+- To commit(Assuming that I am currently in the project folder)
+    -- git add .
+    -- git commit -m "Adding my changes"
+    -- git push origin main
+    
+
+
