@@ -1,0 +1,11 @@
+- download git and install it
+- vscode and install it
+- create account on github.com
+- clone the repository shared
+- git steps
+    -- Open Terminal by visiting the vscode menu
+    -- git clone https://github.com/thabungm/htmlCssJavascript.git
+    -- make changes & push it(Thabung)
+    -- git pull origin main
+- install live server
+- emmet generates html snippet(inbuilt with vscode)    
