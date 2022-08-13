@@ -34,10 +34,28 @@
         <div>
             <textarea name="" id="" placeholder="Description" cols="30" rows="10"></textarea>
         </div>
+        <div>
+            <label for="brand">Choose a Brand:</label><input list="brands" id="brand" />
+            <datalist id="brands">
+                <option value="Addidas">
+                <option value="Nike">
+                <option value="Puma">
+                <option value="Skechers">
+                <option value="DKS">
+            </datalist>
+        </div>
+
 
         <input type="reset" value="Reset " />
         <input type="submit" value="Create Account" />
 
+        <div>
+
+            <input id="terms" type="checkbox" />
+            <label for="terms">
+                I accept the terms and conditions
+            </label>
+        </div>
     </form>
 </body>
 
