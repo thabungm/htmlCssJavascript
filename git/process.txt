@@ -1,4 +1,6 @@
-- A and B are friends and team members working in a project
+-  and B are friends and team members working in a project
+
+-- Test text
 
 - A creates a project (group of files), he is the owner
 - A uploads it to github.com (original copy) named it as "main" & shared with team(A & B)

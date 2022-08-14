@@ -3,11 +3,15 @@
 - A creates a project (group of files), he is the owner
 - A uploads it to github.com (original copy) named it as "main" & shared with team(A & B)
 - B downloads/clone it to his system
-- B creates a copy(checkout) and name it "feature"
+-  creates a copy(checkout) and name it "feature"
     git checkout -b feature
+    // test
 
 
 - B started making changes +++ --
+    -- to see the list of changes
+    git status 
+    
 - B will upload the changes in "feature" to  github.com with a message eg. "introduced a cool feature"
 - B request A to consider the changes in "feature" to "main" (pull request/ merge request)
 - A then sees the changes (reviewing the Pull request(PR))
