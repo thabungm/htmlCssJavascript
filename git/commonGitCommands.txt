@@ -11,12 +11,15 @@
 - B started making changes +++ --
     -- to see the list of changes
     git status 
-    
+
 - B will upload the changes in "feature" to  github.com with a message eg. "introduced a cool feature"
-- B request A to consider the changes in "feature" to "main" (pull request/ merge request)
+- B request A to consider the changes in "feature" to "main" 
+(pull request/ merge request)
+
 - A then sees the changes (reviewing the Pull request(PR))
 - If A finds the changes meaningful
 -- then he will take in the changes in "main" copy
 else
 -- A will feedback through comments
 -- A can also reject the request
+-

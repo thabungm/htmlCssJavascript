@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid green;
+        }
+
+        .container .heading {
+            color: green;
+        }
+
+        .container>.heading {
+            background: blue;
+            color: white;
+        }
+
+        .heading+.sibling1 {
+            color: red;
+        }
+
+        .heading~.sibling2 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">
+            (sibling1)
+        </h1>
+        <h1 class="sibling1">
+            sibling2
+        </h1>
+        <div class="sibling2">
+            <h2> Sibling 2</h2>
+            <h2>
+                Heading
+            </h2>
+        </div>
+    </div>
+</body>
+
+</html>
