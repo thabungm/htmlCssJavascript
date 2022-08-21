@@ -1,0 +1,26 @@
+/* cm, mm, in, pt, pc and px */
+
+.container {
+    background: blue;
+    color: white;
+    width: 400px;
+}
+html {
+    font-size: 20px;
+}
+.parent {
+    font-size: 30px;
+    background: green;
+    padding: 20px;
+}
+.child {
+    font-size: 1rem;
+    width: 50%;
+    background: yellow
+}
+
+.containerVw {
+    border: 1px solid black;
+    width: 50vw;
+    height: 50vh;
+}

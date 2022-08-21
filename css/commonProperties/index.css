@@ -16,4 +16,13 @@
     background-position: left top;
     background-repeat: no-repeat;
     background-size: contain;
+
+    border-radius: 20px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: green;
 }

@@ -1,0 +1,19 @@
+ /* not clicked/not-visited */
+ a:link {
+    color: red;
+}
+
+/* visited */
+a:visited {
+    color: green;
+}
+
+/* bring the cursor on it */
+a:hover {
+    color: blue;
+}
+
+/* while clicking */
+a:active {
+    color: orange;
+}

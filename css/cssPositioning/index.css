@@ -1,0 +1,18 @@
+.container {
+    background: red;
+    /* padding: 10px; */
+    color: white;
+
+}
+.element1 {
+    background: green;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    top: 200px;
+}
+
+.element2 {
+    background: blue;
+    padding: 10px;
+}
