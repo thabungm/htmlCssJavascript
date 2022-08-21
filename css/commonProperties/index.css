@@ -1,0 +1,19 @@
+.container {
+    /*Content/Text*/
+    /* color: #ffffff; */
+    color: #008000;
+    /* color: hsl(0, 100%, 50%); */
+    /* color: rgb(0, 255, 128); */
+    font-size: 20px;
+    font-weight:bolder;
+    text-align: center;
+    line-height:28px;
+
+    border: 1px solid black;
+    height: 200px;
+    /* width: 500px; */
+    background-image: url('https://i.picsum.photos/id/0/367/267.jpg?hmac=7vvdjNHaShwe3Ul3DAaQIBBz0RnNLfUcEaCV-94NNLE');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
