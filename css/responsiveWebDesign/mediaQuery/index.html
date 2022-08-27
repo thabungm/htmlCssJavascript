@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background: yellow;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .container {
+                width: 200px;
+                float: left;
+            }
+        }
+
+        @media only print {
+            .container {
+                background: blue;
+                color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Lorem ipsum dolor, sit amet
+    </div>
+    <div class="container">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, illum soluta similique architecto a nam
+        suscipit aliquam eum officia.
+    </div>
+    <div class="container">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, illum soluta similique architecto a nam
+        suscipit aliquam eum officia. Provident, libero perferendis? Quod dolorem consequuntur autem vero! Repellendus,
+        nesciunt voluptates.
+    </div>
+</body>
+
+</html>
