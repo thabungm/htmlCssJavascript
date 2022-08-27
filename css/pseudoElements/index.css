@@ -8,5 +8,5 @@ blockquote::before {
 blockquote::after {
     content:close-quote;
     font-size:40px;
-    color: blue;
+    color: red;
 }
