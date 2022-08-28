@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background: red;
+            padding: 5px;
+            gap: 10px;
+            color: white;
+            display: grid;
+            /* width: 600px; */
+            /* grid-template-columns: 300px auto 200px; */
+            /* grid-template-columns: 300px auto 200px; */
+            /* grid-template-columns: repeat(2, 200px) auto; */
+            grid-template-columns: 2fr 1fr auto;
+            /* grid-template-columns: 2fr min-content 300px; */
+            /* grid-template-columns: 2fr max-content 300px; */
+            /* grid-template-columns: 100px 200px auto; */
+            grid-template-rows: 100px max-content auto;
+
+        }
+
+        .items {
+            background: blue;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2. Lorem ipsum dolor</div>
+        <div class="items">3</div>
+        <div class="items">4 Lorem ipsum dolor</div>
+        <div class="items">5. Lorem</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8. Lorem ipsum</div>
+        <div class="items">9</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .items {
+        background: blue;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .container {
+        display: grid;
+        background: red;
+        padding: 5px;
+        gap: 10px;
+        color: white;
+        /* grid-template-columns: ; */
+        grid-template-areas:
+            "header header header  header"
+            "sider    .    content content"
+            "footer footer footer  footer"
+        ;
+    }
+
+    .item1 {
+        grid-area: header;
+    }
+
+    .item2 {
+        grid-area: sider;
+    }
+
+    .item3 {
+        grid-area: content;
+    }
+
+    .item5 {
+        grid-area: footer;
+    }
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="items item1">1</div>
+        <div class="items item2">2. Lorem ipsum dolor</div>
+        <div class="items item3">3 2. Lorem ipsum dolor 2. Lorem ipsum dolor</div>
+        <div class="items item5">5. Lorem</div>
+
+    </div>
+</body>
+
+</html>
