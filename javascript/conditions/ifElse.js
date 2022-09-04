@@ -157,17 +157,19 @@ const courses = [
       office1: {
         mobile: 'FGH-123',
       },
-      /*  office2: {
-        mobile: 'IJK-123',
-      }, */
     },
   },
 ];
-/* console.log(courses[0].contact.office2.mobile);
+/* 
+loop through the array
+print the office2 mobile by looping through the array of objects
+if office2 mobile not exists print "NA"
+
+console.log(courses[0].contact.office2.mobile);
 console.log(courses[1].contact.office2.mobile); */
 
+/* 
 // Optional chaining
-
 const course3 = {
   name: 'MERN stack',
   contact: {
@@ -182,4 +184,21 @@ console.log(course3?.contact?.office1?.mobile);
 //   console.log(course3.contact.office1.mobile);
 // }
 
-// console.log(course3.contact.office1.mobile);
+// console.log(course3.contact.office1.mobile); */
+
+const products = [
+  { name: 'Earphone', price: 100 },
+  { name: 'Laptop', price: 700, discount: 0 },
+];
+// print a default discount of 5 if not there
+for (var index = 0; index < products.length; ++index) {
+  //null OR undefined
+  // null coaelescing
+  console.log(products[index].discount ?? 5);
+
+  /*  if (products[index].discount) {
+    console.log(products[index].discount);
+  } else {
+    console.log(5);
+  } */
+}
