@@ -32,7 +32,7 @@ if (message === 'morning') {
 }
  */
 /* 
-const message = 'hello';
+const message = 'morning';
 
 switch (message) {
   case 'morning':
@@ -76,11 +76,110 @@ if (currentHour >= 0 && currentHour < 12) {
   console.log('Morning');
 }
  */
-const course = 'PHP';
+/* const course = 'PHP';
 const result = course == 'Javascript' || course == 'HTML';
 console.log(result);
 if (course == 'Javascript' || course == 'HTML') {
   console.log('Right classroom');
-}
+} */
 
 // Truthy and falsy
+// Truthy values
+// const result = true; // -> boolean true
+// const result = 21;   // non-zero integers
+// const result = 'false'; // non-empty string
+
+// Falsy values
+// const result = false; // -> boolean false
+// const result = 0;    // integer 0
+// const result = null;
+// var result;// undefined
+/* 
+const result = ''; // empty string
+
+if (result) {
+  console.log('Yes');
+} else {
+  console.log('No');
+} 
+*/
+/* const truthyValue = 0;
+const falsyValue = null;
+const logicalEndResult = truthyValue && falsyValue;
+console.log(logicalEndResult); */
+
+/* const truthy1 = 1;
+const truthy2 = 'Hello';
+const logicalEndResult = truthy1 && truthy2;
+console.log(logicalEndResult);
+ */
+/* const truthyValue = 'Test';
+const falsyValue = null;
+const logicalEndResult = truthyValue || falsyValue;
+console.log(logicalEndResult); */
+
+/* const truthy1 = 'Test';
+const truthy2 = 2;
+const logicalEndResult = truthy1 || truthy2;
+console.log(logicalEndResult); */
+
+const course1 = {
+  name: 'MERN stack',
+  contact: {
+    helpline: '123-456-7890',
+    office: '567d-456-7890',
+  },
+};
+// console.log(course1.name);
+// console.log(course1.contact.helpline);
+
+const mark = 20;
+// const marksInScience = 10;
+const marks = [10, 20, 40]; // Array
+const fruits = ['Apple', 10, 'Banana', 'Jackfruit'];
+//index
+// console.log(fruits[1]);
+const courses = [
+  {
+    name: 'MERN stack',
+    contact: {
+      office1: {
+        mobile: 'ABC-123',
+      },
+      office2: {
+        mobile: 'CDE-123',
+      },
+    },
+  },
+  {
+    name: 'HTML',
+    contact: {
+      office1: {
+        mobile: 'FGH-123',
+      },
+      /*  office2: {
+        mobile: 'IJK-123',
+      }, */
+    },
+  },
+];
+/* console.log(courses[0].contact.office2.mobile);
+console.log(courses[1].contact.office2.mobile); */
+
+// Optional chaining
+
+const course3 = {
+  name: 'MERN stack',
+  contact: {
+    office1: {
+      mobile: 'FGH-123',
+    },
+  },
+};
+console.log(course3?.contact?.office1?.mobile);
+
+// if (course3.contact.office1) {
+//   console.log(course3.contact.office1.mobile);
+// }
+
+// console.log(course3.contact.office1.mobile);
