@@ -10,6 +10,9 @@ const player = {
   },
 };
 
+/* const player2 = JSON.parse(JSON.stringify(player));
+player2.name = 'Testing'; */
+// const player2 = player;
 /* const player2 = player;
 player2.name = 'Xyz';
 console.log(player); */
@@ -60,7 +63,9 @@ const score = player.score;
     contact: { mobile },
   },
 } = player;
-console.log(name, score, mobile);
+console.log(name, score, mobile); */
+
+/*
 
 function recursiveFunction(evenNumber, maxCount) {
   console.log(evenNumber);
@@ -115,10 +120,10 @@ course.name = 'React';
 console.log(course); */
 
 // Object seal and object freeze
-const course = {
+/* const course = {
   name: 'MERN',
   durationInMonths: 3,
-};
+}; */
 // course.isCompleted = false;
 // console.log(course);
 /* Object.seal(course);
@@ -126,9 +131,37 @@ course.isCompleted = false;
 course.durationInMonths = 6;
 delete course.durationInMonths;
 console.log(course); */
-
+/* 
 Object.freeze(course);
 course.name = 'Javascript';
 delete course.durationInMonths;
 
 console.log(course);
+ */
+
+/* const library = [
+  {
+    author: 'Bill Gates',
+    title: 'The Road Ahead',
+    readingStatus: true,
+  },
+  {
+    author: 'Steve Jobs',
+    title: 'Walter Isaacson',
+    readingStatus: true,
+  },
+  {
+    author: 'Suzanne Collins',
+    title: 'Mockingjay: The Final Book of The Hunger Games',
+    readingStatus: false,
+  },
+]; */
+// for loop, forEach
+/* for (let i = 0; i < library.length; i++) {
+  console.log('Reading status', library[i].readingStatus);
+}
+ */
+
+/* library.forEach(function (el) {
+  console.log('Reading status', el.readingStatus);
+}); */
