@@ -17,4 +17,7 @@ console.log(message); */
 /* const name = ' MERN ';
 console.log(name.trim()); */
 // console.log('HelloWorld'.startsWith('Z'));
-console.log('HelloWorld'.endsWith('e'));
+// console.log('HelloWorld'.endsWith('e'));
+
+const output = 'A'.repeat(5);
+console.log(output);
