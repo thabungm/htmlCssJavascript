@@ -17,3 +17,10 @@ function updateText() {
 
   userDiv.innerHTML = '**Mock user updated**';
 }
+
+function printInConsole() {
+  const course1 = document.getElementById('course1');
+  const course2 = document.getElementById('course2');
+  console.log(course1.value);
+  console.log(course2.value);
+}
