@@ -1,14 +1,17 @@
 // Get element
-const userDiv = document.getElementById('user');
-console.log(userDiv);
+// const userDiv = document.getElementById('user');
+/* const userDiv = document.querySelector('#user');
 
-const courseText = document.getElementsByClassName('name');
-console.log(courseText);
+console.log('userDiv', userDiv); */
+
+// const courseText = document.getElementsByClassName('name');
+const courseText = document.querySelector('.name');
+console.log('courseText', courseText);
 
 // create element
 const courseElement = document.createElement('h3');
 courseElement.innerText = 'Demo Text';
-console.log(courseElement);
+// console.log(courseElement);
 document.body.append(courseElement);
 
 // Update content
