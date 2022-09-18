@@ -23,10 +23,34 @@ function Product(inputName, inputPrice, inputQty) {
   };
 }
 
-const mango = new Product('Mango', 2, 10);
+/* const mango = new Product('Mango', 2, 10);
 mango.getAvailableStock();
 mango.buy(3);
-
+ */
 /* const apple = new Product('Apple', 3, 33);
 console.log(apple);
  */
+
+/*
+- Write a constructor function to accept `name` as input
+- Define a function called greet()  which will print greeting 
+eg name: Mike , message is "Good morning Mike"
+- Create an instance and call the greet() function
+*/
+
+/* function GreetingFunction(inputName) {
+  this.name = inputName;
+}
+
+const person1 = new GreetingFunction('Mike');
+console.log(person1);
+ */
+
+function person(inputName) {
+  this.name = inputName;
+  this.greet = () => {
+    console.log('hello', this.name);
+  };
+}
+const test = new person('Testing');
+test.greet();
