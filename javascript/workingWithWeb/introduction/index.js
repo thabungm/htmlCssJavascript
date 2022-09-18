@@ -24,3 +24,13 @@ function printInConsole() {
   console.log(course1.value);
   console.log(course2.value);
 }
+
+function printOnUI() {
+  const course1 = document.getElementById('course1');
+  const course2 = document.getElementById('course2');
+  document.body.append(course1.value, course2.value);
+}
+
+/* Create a UI which contians 2 fields
+firstName & lastName
+onclick of button read these values and print on the UI */

@@ -15,8 +15,13 @@ console.log(newDate.toLocaleString()); */
 
 /* const newDate = new Date(2021, 3, 21, 23, 30, 45);
 console.log(newDate.toLocaleString()); */
-
-const now = new Date();
+/* const timezones = [
+  'America/New_York',
+  'Japan',
+  'Asia/Kolkata',
+  'America/Bahia',
+];
+const now = new Date(); */
 
 // getter methods
 // console.log(now.getDate());
@@ -41,7 +46,7 @@ const now = new Date();
     weekday: 'lo'
 } */
 
-console.log(
+/* console.log(
   now.toLocaleDateString('en-us', {
     weekday: 'short',
     year: 'numeric',
@@ -49,3 +54,40 @@ console.log(
     day: 'numeric',
   })
 );
+ */
+const timezones = [
+  'America/New_York',
+  'Japan',
+  'Asia/Kolkata',
+  'America/Bahia',
+];
+
+/* const today = new Date();
+timezones.forEach(function (timezone) {
+  console.log(
+    timezone,
+    today.toLocaleTimeString('en-US', { timeZone: timezone })
+  );
+}); */
+
+let date = new Date();
+
+for (let i = 0; i < timezones.length; i++) {
+  //date=timezones[i];
+  console.log(
+    timezones[i],
+    date.toLocaleTimeString('en-us', {
+      timeZone: timezones[i],
+      hour: '2-digit',
+      minute: '2-digit',
+    })
+  );
+}
+
+/*
+Create a UI which contians 2 fields
+firstName & lastName
+onclick of button read these values and print on the UI
+
+
+*/
