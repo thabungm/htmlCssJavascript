@@ -1,8 +1,8 @@
 // Get element
 // const userDiv = document.getElementById('user');
-/* const userDiv = document.querySelector('#user');
+const userDiv = document.querySelector('#user');
 
-console.log('userDiv', userDiv); */
+console.log('userDiv', userDiv);
 
 // const courseText = document.getElementsByClassName('name');
 const courseText = document.querySelector('.name');

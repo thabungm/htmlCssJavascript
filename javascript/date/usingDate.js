@@ -83,11 +83,3 @@ for (let i = 0; i < timezones.length; i++) {
     })
   );
 }
-
-/*
-Create a UI which contians 2 fields
-firstName & lastName
-onclick of button read these values and print on the UI
-
-
-*/
