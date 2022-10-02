@@ -72,6 +72,7 @@ timezones.forEach(function (timezone) {
 
 let date = new Date();
 
+// for (let i = 0; i < timezones.length; i++) {
 for (let i = 0; i < timezones.length; i++) {
   //date=timezones[i];
   console.log(
