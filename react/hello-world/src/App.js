@@ -7,7 +7,7 @@ class App extends React.Component {
     super(props);
     this.state = { message: 'good evening', message2: 'Test' };
   }
-
+  // human  -> namuh
   render() {
     // jsx
     return (
