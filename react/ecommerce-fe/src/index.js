@@ -5,12 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import LoginPage from './pages/LoginPage';
 import ProductListing from './pages/ProductListing';
+import RoutesComponent from './routes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <LoginPage /> */}
-    <ProductListing />
+    <RoutesComponent />
   </React.StrictMode>
 );
 
