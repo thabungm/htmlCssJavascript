@@ -1,0 +1,7 @@
+.productContainer {
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

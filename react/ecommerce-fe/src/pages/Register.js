@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import Button from '../components/Button';
 import TextInput from '../components/TextInput';
-const LoginPage = () => {
+const RegisterPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [name, setName] = useState('');
   const [errors, setErrors] = useState({
     email: '',
     password: '',
+    name: '',
   });
   // axios
 
@@ -43,7 +45,17 @@ const LoginPage = () => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <h3>Login</h3>
+        <h3>Register</h3>
+        <TextInput
+          name='name'
+          type='text'
+          placeholder='Enter your name'
+          error={errors.name}
+          value={name}
+          onChange={(event) => {
+            setName(event.target.value);
+          }}
+        />
         <TextInput
           name='email'
           type='text'
@@ -71,4 +83,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default RegisterPage;
