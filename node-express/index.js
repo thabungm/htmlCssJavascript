@@ -1,18 +1,15 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import { connect } from './mongo';
 const app = express();
 const PORT = 3000;
 app.use(bodyParser.json());
+connect();
 
-app.get('/test', (req, res) => {
+app.get('/', (req, res) => {
   res.json({
-    message: 'welcome to rest api',
+    message: 'welcome to ecommerce rest api',
   });
-});
-
-app.post('/test', (req, res) => {
-  console.log(req.body);
-  res.json({ message: 'success' });
 });
 
 app.listen(PORT, () => {

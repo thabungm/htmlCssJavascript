@@ -19,3 +19,7 @@ HTTP Verbs/method:
     POST: create data in the server
     PUT/PATCH: update data in the server
     DELETE: delete record/s in the server
+
+route: GET/POST/PUT/DELETE
+C -> takes request and calls relevant services
+M -> deals with database
