@@ -1,0 +1,202 @@
+use mernClass
+show databases
+
+db.riches.insertMany(
+  [
+    {
+        "first_name": "Larry",
+        "last_name": "Freeman",
+        "networth": 340,
+        "investments": [
+            {
+                "name": "Oil Industry",
+                "year": 1990,
+                "value": 10
+            },
+            {
+                "name": "Bank Industry",
+                "year": 1995,
+                "value": 5
+            },
+            {
+                "name": "Bank Industry",
+                "year": 1997,
+                "value": 35
+            },
+            {
+                "name": "Publishing Industry",
+                "year": 1995,
+                "value": 130
+            },
+            {
+                "name": "Beer Industry",
+                "year": 2005,
+                "value": 40
+            },
+            {
+                "name": "Energy Industry",
+                "year": 2005,
+                "value": 55
+            }
+        ]
+    },
+    {
+        "first_name": "Bill",
+        "last_name": "Freeman",
+        "networth": 80,
+        "investments": [
+            {
+                "name": "Oil Industry",
+                "year": 1992,
+                "value": 30
+            },
+            {
+                "name": "Oil Industry",
+                "year": 1995,
+                "value": 10
+            },
+            {
+                "name": "Bank Industry",
+                "year": 1995,
+                "value": 15
+            },
+            {
+                "name": "Bank Industry",
+                "year": 2005,
+                "value": 25
+            }
+        ]
+    },
+    {
+        "first_name": "Jerry",
+        "last_name": "Whackman",
+        "networth": 190,
+        "investments": [
+            {
+                "name": "Publishing Industry",
+                "year": 1990,
+                "value": 130
+            },
+            {
+                "name": "Beer Industry",
+                "year": 1990,
+                "value": 40
+            },
+            {
+                "name": "Energy Industry",
+                "year": 2005,
+                "value": 15
+            }
+        ]
+    },
+    {
+        "first_name": "Mary",
+        "last_name": "Whackman",
+        "networth": 280,
+        "investments": [
+            {
+                "name": "Oil Industry",
+                "year": 1997,
+                "value": 30
+            },
+            {
+                "name": "Bank Industry",
+                "year": 2005,
+                "value": 25
+            },
+            {
+                "name": "Auto Industry",
+                "year": 2008,
+                "value": 125
+            }
+        ]
+    },
+    {
+        "first_name": "Kate",
+        "last_name": "Whackman",
+        "networth": 120,
+        "investments": [
+            {
+                "name": "Logistics Industry",
+                "year": 2017,
+                "value": 30
+            },
+            {
+                "name": "Bank Industry",
+                "year": 2005,
+                "value": 50
+            },
+            {
+                "name": "Auto Industry",
+                "year": 2008,
+                "value": 10
+            }
+        ]
+    }
+]
+)
+
+db.riches.find({})
+db.riches.find({last_name:"Freeman"})
+//#2 pick few fields
+db.riches.aggregate(
+  [
+    {
+      $project: {
+        _id: 0,
+        first_name: 1,
+        last_name: 1,
+        networth: 1
+      }
+    }
+  ]
+)
+
+//#3 calcuate tax 10% on networth
+db.riches.aggregate(
+  [
+    {
+      $project: {
+        _id: 0,
+        first_name: 1,
+        last_name: 1,
+        networth: 1,
+        tax: {
+          $divide: ["$networth", 10]
+        }
+      }
+    }
+  ]
+)
+
+// 80/10
+
+db.riches.find()
+// filter the "Bank Industry"
+db.riches.aggregate([
+  {$unwind: "$investments"},
+  {$match: {"investments.name":"Bank Industry"}}
+])
+
+// get unique family names
+db.riches.aggregate([
+  {$group: {
+    _id: "$last_name"
+  }}
+])
+
+// calculate the networth of each family
+db.riches.aggregate(
+  [{
+    $group: {
+      _id: "$last_name",
+      total_networth: {$sum: "$networth"}
+    }
+  },
+  {
+    $sort: {
+      "total_networth": -1
+    }
+  }
+  ]
+)
