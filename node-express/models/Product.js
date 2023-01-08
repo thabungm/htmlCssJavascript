@@ -23,6 +23,9 @@ const fields = {
     type: String,
     enum: ['Active', 'Draft'],
   },
+  quantity: {
+    type: Number,
+  },
 };
 
 const ProductSchema = new Schema(fields, { timestamps: true });
