@@ -1,4 +1,4 @@
-import { login } from '../controllers/auth';
+import { login, register } from '../controllers/auth';
 const authRoutes = (router) => {
   router.post('/register', async (req, res) => {
     try {
