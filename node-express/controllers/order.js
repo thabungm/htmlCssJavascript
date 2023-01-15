@@ -11,4 +11,26 @@ export const create = async (data) => {
   return result;
 };
 
+export const get = async () => {
+  /*
+
+    [2,3,4,5, 6, 7]
+    // > 3: 4 ,5 , 6, 7
+   
+    // 4 even ,5 odd , 6 even, 7 odd
+    */
+  const result = await Order.aggregate([
+    {
+      $lookup: {
+        from: 'users',
+        localField: 'userId',
+        foreignField: '_id',
+        as: 'user',
+      },
+    },
+  ]);
+  return result;
+  //   return result;
+};
+
 // export const get = async (params) => {

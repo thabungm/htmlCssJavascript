@@ -1,10 +1,19 @@
-import { create } from '../controllers/order';
+import { create, get } from '../controllers/order';
 import { auth } from '../middleware/auth';
 const orderRoutes = (router) => {
   router.post('/order', auth, async (req, res) => {
     try {
       const { _id: userId } = req.user;
       const data = await create({ ...req.body, userId });
+      res.status(200).json(data);
+    } catch (error) {
+      res.status(400).json(error.message);
+    }
+  });
+
+  router.get('/order', async (req, res) => {
+    try {
+      const data = await get();
       res.status(200).json(data);
     } catch (error) {
       res.status(400).json(error.message);
